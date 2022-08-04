@@ -26,7 +26,7 @@ const io= SocketIO(server);
 app.get("/items",function(req,res){
     var alarm = req.query.id;
     res.send("hola: " + alarm);
-    io.sockets.emit('señal','peligro');
+    io.sockets.emit('señal','peligro!');
 });
 
 io.on('connection', (socket)=> {
