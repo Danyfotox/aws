@@ -46,9 +46,8 @@ socket.on('alarma',function(data){
     output2.innerHTML += `<p>${data.message} </p>`
 });
 
+    output2.innerHTML = '';
 socket.on('señal',function(data){
-    output2.innerHTML = '';
     output2.innerHTML = `<p>${data} </p>`;
-    output2.innerHTML = '';
 });
 
