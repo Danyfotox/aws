@@ -51,6 +51,6 @@ socket.on('señal',function(data){
     output2.innerHTML += `<p>${data} </p>`;
 });
 
-socket.on('señal',function(data){
+socket.on('ip',function(data){
     output2.innerHTML = `<p>La IP local es ${data} </p>`;
 });
