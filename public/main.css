@@ -5,14 +5,15 @@ body{
     margin: 30px auto;
     border: 1px solid #ddd;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
-    background-color: aqua;
+    background-color: rgb(16, 36, 146);
     text-align: center;
 }
 #subtitle{
+    max-width: 700px;
     margin: 30px auto;
     border: 1px solid #ddd;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
-    background-color: aqua;
+    background-color: rgb(16, 36, 146);
     text-align: center;
 }
 #chat-container{
