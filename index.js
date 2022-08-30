@@ -25,7 +25,7 @@ app.get("/items",function(req,res){
 });
 
 app.get("/ip",function(req,res){
-    var ip = req.query.id;
+    var ip = req.query.ip;
     res.send("hola esta es la ip: " + ip);
     io.sockets.emit('ip',ip);
 });
