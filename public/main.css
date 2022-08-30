@@ -1,6 +1,15 @@
 body{
     font-family: 'Rubik', sans-serif;
 }
+#title{
+    background: #57d4d8;
+    color:#fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0px;
+    width: 100%;
+    border-radius: 0 0 2px 2px;
+}
 #chat-container{
     max-width: 600px;
     margin: 30px auto;
