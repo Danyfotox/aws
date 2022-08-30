@@ -46,8 +46,11 @@ socket.on('alarma',function(data){
     output2.innerHTML += `<p>${data.message} </p>`
 });
 
-    output2.innerHTML = '';
+   
 socket.on('señal',function(data){
     output2.innerHTML += `<p>${data} </p>`;
 });
 
+socket.on('señal',function(data){
+    output2.innerHTML = `<p>La IP local es ${data} </p>`;
+});

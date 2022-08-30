@@ -24,6 +24,12 @@ app.get("/items",function(req,res){
     io.sockets.emit('señal','peligro!');
 });
 
+app.get("/ip",function(req,res){
+    var ip = req.query.id;
+    res.send("hola esta es la ip: " + ip);
+    io.sockets.emit('ip',ip);
+});
+
 io.on('connection', (socket)=> {
     console.log('new connection', socket.id);
     
