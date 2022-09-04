@@ -42,7 +42,7 @@ socket.on('chat:message',function(data){
 socket.on('chat:typing', function(data){
     actions.innerHTML = `<p><em>${data} is typing a message.</em></p>`
     iconos.innerHTML = `<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_8knle7ns.json"  
-    background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>`
+    background="transparent"  speed="1"  style="width: 300px; height: 300px; align-content: center;"  loop autoplay></lottie-player>`
 });
 
 socket.on('alarma',function(data){
