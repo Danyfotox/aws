@@ -27,9 +27,7 @@ body{
 
 #caja-iconos{
     max-width: 300px;
-    margin: 30px auto;
-    border: 1px solid #ddd;
-    
+    margin: 30px auto;   
 }
 
 #chat-window{
