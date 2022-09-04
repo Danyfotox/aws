@@ -23,9 +23,6 @@ btn.addEventListener('click', function(){
 
 btn2.addEventListener('click', function(){
     iconos.innerHTML = '';
-    socket.emit('alarma',{
-        message: "hola"
-    });
 })
 
 message.addEventListener('keypress', function(){
