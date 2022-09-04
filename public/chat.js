@@ -12,6 +12,7 @@ let output = document.getElementById('output');
 let actions = document.getElementById('actions');
 let output2 =document.getElementById('output2');
 let btn2 = document.getElementById('send2');
+let iconos = document.getElementById('caja-iconos');
 
 btn.addEventListener('click', function(){
     socket.emit('chat:message',{
@@ -49,6 +50,7 @@ socket.on('alarma',function(data){
    
 socket.on('señal',function(data){
     output2.innerHTML += `<p>${data} </p>`;
+    iconos.innerHTML = '';
 });
 
 socket.on('ip',function(ip){
