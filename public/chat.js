@@ -1,5 +1,18 @@
 const socket = io()
 
+import React from "react";
+import { ReactDOM } from "react";
+import { useEffect, useState } from "react";
+import {
+    Barchart,
+    Bar,
+    Line,
+    LineChart,
+    XAxis,
+    YAxis,
+    Tooltip,
+    CartesianGrid
+} from 'recharts';
 
 // string
 const data_to_pass_in = 'Send this to python script';
@@ -57,3 +70,38 @@ socket.on('señal',function(data){
 socket.on('ip',function(ip){
     output2.innerHTML = `<p>La IP local es ${ip} </p>`;
 });
+
+const App = ({}) => {
+    
+    const [data, setData] = useState([]);
+
+    //Listen for a cpu event and update the state
+    useEffect(() => {
+        socket.on('cpu',(cpuPercent) =>{
+            setData(currentData => [...currentData, cpuPercent]);
+        });
+    },[]);
+
+    //rebder the line cg¿hart using the state
+
+    return(
+        <div>
+            <h1>Real Time CPU Usage</h1>
+            <LineChart width={500} height={300} data={data}>
+            <XAxis dataKey="name" />
+            <YAxis />
+            <CartesianGrid
+                stroke="#eee"
+                strokeDasharray="5 5"
+            />
+            <Line 
+                type="monotone"
+                dataKey="value" 
+                stroke="#8884d8"    
+            />
+            </LineChart>
+        </div> 
+    );
+};
+
+ReactDOM.render(<App />,document.getElementById('root'));

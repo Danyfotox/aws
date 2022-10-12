@@ -2,6 +2,8 @@ const path = require('path');
 const express = require('express');
 const app = express();
 
+const os = require('os-utils');
+
 //settings
 app.set('port',process.env.PORT || 3000);
 
@@ -47,4 +49,14 @@ io.on('connection', (socket)=> {
     socket.on('señal',(alarm)=>{
         io.sockets.emit('señal',alarm);
     });
+
+    let tick = 0;
+    setInterval(() => {
+        os.cpuUsage((cpuPercent) => {
+            socket.emit('cpu', {
+                value : cpuPercent,
+                name : tick++    
+            });
+        });
+    }, 1000);
 });
