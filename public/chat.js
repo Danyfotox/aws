@@ -1,7 +1,7 @@
 const socket = io()
 
 import React from "react";
-import { ReactDOM } from "react";
+import ReactDOM  from "react";
 import { useEffect, useState } from "react";
 import {
     Barchart,
