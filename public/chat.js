@@ -71,37 +71,37 @@ socket.on('ip',function(ip){
     output2.innerHTML = `<p>La IP local es ${ip} </p>`;
 });
 
-const App = ({}) => {
+//const App = ({}) => {
     
-    const [data, setData] = useState([]);
+  //  const [data, setData] = useState([]);
 
     //Listen for a cpu event and update the state
-    useEffect(() => {
-        socket.on('cpu',(cpuPercent) =>{
-            setData(currentData => [...currentData, cpuPercent]);
-        });
-    },[]);
+    //useEffect(() => {
+      //  socket.on('cpu',(cpuPercent) =>{
+        //    setData(currentData => [...currentData, cpuPercent]);
+        //});
+    //},[]);
 
     //rebder the line cg¿hart using the state
 
-    return(
-        <div>
-            <h1>Real Time CPU Usage</h1>
-            <LineChart width={500} height={300} data={data}>
-            <XAxis dataKey="name" />
-            <YAxis />
-            <CartesianGrid
-                stroke="#eee"
-                strokeDasharray="5 5"
-            />
-            <Line 
-                type="monotone"
-                dataKey="value" 
-                stroke="#8884d8"    
-            />
-            </LineChart>
-        </div> 
-    );
-};
+    //return(
+       // <div>
+      //      <h1>Real Time CPU Usage</h1>
+         //   <LineChart width={500} height={300} data={data}>
+           // <XAxis dataKey="name" />
+            //<YAxis />
+            //<CartesianGrid
+             //   stroke="#eee"
+              //  strokeDasharray="5 5"
+           // />
+           // <Line 
+             //   type="monotone"
+               // dataKey="value" 
+              //  stroke="#8884d8"    
+            ///>
+            //</LineChart>
+  //      </div> 
+   // );
+//};
 
 ReactDOM.render(<App />,document.getElementById('root'));
