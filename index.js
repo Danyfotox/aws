@@ -50,13 +50,13 @@ io.on('connection', (socket)=> {
         io.sockets.emit('señal',alarm);
     });
 
-    let tick = 0;
-    setInterval(() => {
-        os.cpuUsage((cpuPercent) => {
-            io.sockets.emit('cpu', {
-                value : cpuPercent,
-                name : tick++    
-            });
-        });
-    }, 1000);
+    //let tick = 0;
+    //setInterval(() => {
+    //    os.cpuUsage((cpuPercent) => {
+    //        io.sockets.emit('cpu', {
+    //            value : cpuPercent,
+    //            name : tick++    
+    //        });
+    //    });
+    //}, 1000);
 });
