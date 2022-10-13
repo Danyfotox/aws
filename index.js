@@ -53,7 +53,7 @@ io.on('connection', (socket)=> {
     let tick = 0;
     setInterval(() => {
         os.cpuUsage((cpuPercent) => {
-            socket.emit('cpu', {
+            io.sockets.emit('cpu', {
                 value : cpuPercent,
                 name : tick++    
             });
