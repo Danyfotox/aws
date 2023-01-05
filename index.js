@@ -32,6 +32,12 @@ app.get("/ip",function(req,res){
     io.sockets.emit('ip',ip);
 });
 
+app.get("/graph",function(req,res){
+    var value = req.query.value;
+    res.send("hola este es el valor recibido: " + value);
+    io.sockets.emit('value', value);
+});
+
 io.on('connection', (socket)=> {
     console.log('new connection', socket.id);
     
@@ -50,6 +56,10 @@ io.on('connection', (socket)=> {
         io.sockets.emit('señal',alarm);
     });
 
+    socket.on('graph',(value)=>{
+        io.sockets.emit('graph',value);
+    });
+    
     //let tick = 0;
     //setInterval(() => {
     //    os.cpuUsage((cpuPercent) => {
