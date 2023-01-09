@@ -23,7 +23,7 @@ const io= SocketIO(server);
 app.get("/items",function(req,res){
     var alarm = req.query.id;
     res.send("hola: " + alarm);
-    io.sockets.emit('señal','peligro!');
+    io.sockets.emit('señal','Se registra una fuga de gas, estás en peligro!');
 });
 
 app.get("/ip",function(req,res){

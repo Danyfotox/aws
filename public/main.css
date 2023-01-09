@@ -85,7 +85,7 @@ button{
 }
 
 #output2 p {
-    color:#aaa;
+    color:rgb(0, 0, 0);
     padding: 14px 0;
     margin: 0 20px;
 }
