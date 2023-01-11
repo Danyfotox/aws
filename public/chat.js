@@ -13,7 +13,7 @@ let btnACK = document.getElementById('btnACK');
 
 
 btnACK.addEventListener('click', function(){
-   btnACK.style.display  = "none";
+   iconos.style.display  = "none";
 });
 
 btn.addEventListener('click', function(){
@@ -47,7 +47,7 @@ socket.on('chat:typing', function(data){
    
 socket.on('señal',function(data){
     output2.innerHTML += `<p>${data} </p>`;
-    btnACK.style.display  = "block";
+    iconos.style.display  = "block";
     //iconos.innerHTML = `<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_8knle7ns.json"  
     //background="transparent"  speed="1"  style="width: 20%; margin-left:40%;"  loop autoplay></lottie-player>`
 });
