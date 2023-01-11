@@ -14,28 +14,36 @@
     <nav id="title">
     <h1>Alarma de fuga de gas</h1>
     </nav>
-    <div id="subtitle">
-    <h2>Chat en vivo</h2>
-    </div>
-    <div id="chat-container">
-        <div id="chat-window">
-            <div id="output"></div>
-            <div id="actions"></div>
+
+    <div class="divCampo50">
+        <div id="subtitle">
+        <h2>Chat en vivo</h2>
         </div>
-        <input type="text" id="username" placeholder="Username">
-        <input type="text" id="message" placeholder="Message">
-        <button id="send">Send</button>
-    </div>
-    <div id="subtitle">
-    <h2>Alarma</h2>
-    </div>
-    <div id="caja-alarma">
-        <div id="alarma">
-            <div id="output2"></div>
+        <div id="chat-container">
+            <div id="chat-window">
+                <div id="output"></div>
+                <div id="actions"></div>
+            </div>
+            <input type="text" id="username" placeholder="Username">
+            <input type="text" id="message" placeholder="Message">
+            <button id="send">Send</button>
         </div>
-        <button id="send2">Alarma</button>
     </div>
+
+    <div class="divCampo50">
+        <div id="subtitle">
+        <h2>Alarma</h2>
+        </div>
+        <div id="caja-alarma">
+            <div id="alarma">
+                <div id="output2"></div>
+            </div>
+            <button id="send2">Alarma</button>
+        </div>
+    </div>
+
     <div id="caja-iconos"></div>
+
     <script src="/socket.io/socket.io.js" charset="utf-8"></script>
     <script src="chat.js" charset="utf-8"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
