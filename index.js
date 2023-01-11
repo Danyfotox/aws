@@ -22,6 +22,7 @@ const io= SocketIO(server);
 
 app.get("/items",function(req,res){
     var alarm = req.query.id;
+    console.log(alarma);
     res.send("hola: " + alarm);
     io.sockets.emit('señal','Se registra una fuga de gas, estás en peligro!');
 });
