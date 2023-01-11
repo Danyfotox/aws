@@ -42,24 +42,40 @@ body{
     float: left;
 }
 #caja-iconos .divContent{
-    background-color: rgba(69, 162, 158);
+    background-color: #8ee1de;
     border-radius: 1em;
-    width: 30%;
-    margin-left: 35%;
-    margin-top: 12em;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 5em;
     position: relative;
     text-align: center;
-    color: white; 
+    color: black;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 #caja-iconos .divContent img{
+    width: 58%;
+    margin-top: 5%;
 
 }
 #caja-iconos .divContent p{
 
 }
 #caja-iconos .divContent button{
-
+    background: #37708c;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0px;
+    width: 30%;
+    border-radius: 4em;
+    margin: 1em 0em 2em 0em;
+    cursor: pointer;
 }
+#caja-iconos .divContent button:hover{
+    background: #000;
+}
+   
 
 #chat-window{
     padding: 14px 0;
