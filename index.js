@@ -47,7 +47,6 @@ io.on('connection', (socket)=> {
 
     socket.on('chat:typing', (data) => {
         socket.broadcast.emit('chat:typing', data);
-        io.sockets.emit('señal','Se registra una fuga de gas, estás en peligro!');
     });
 
    
