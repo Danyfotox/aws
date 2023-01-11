@@ -9,6 +9,12 @@ let actions = document.getElementById('actions');
 let output2 =document.getElementById('output2');
 let btn2 = document.getElementById('send2');
 let iconos = document.getElementById('caja-iconos');
+let btnACK = document.getElementById('btnACK');
+
+
+btnACK.addEventListener('click', function(){
+   btnACK.style.display  = "none";
+});
 
 btn.addEventListener('click', function(){
     socket.emit('chat:message',{
@@ -41,8 +47,9 @@ socket.on('chat:typing', function(data){
    
 socket.on('señal',function(data){
     output2.innerHTML += `<p>${data} </p>`;
-    iconos.innerHTML = `<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_8knle7ns.json"  
-    background="transparent"  speed="1"  style="width: 20%; margin-left:40%;"  loop autoplay></lottie-player>`
+    btnACK.style.display  = "block";
+    //iconos.innerHTML = `<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_8knle7ns.json"  
+    //background="transparent"  speed="1"  style="width: 20%; margin-left:40%;"  loop autoplay></lottie-player>`
 });
 
 socket.on('ip',function(ip){
