@@ -26,8 +26,21 @@ body{
 }
 
 #caja-iconos{
-    max-width: 300px;
-    margin: 30px auto;   
+    width: 100%;
+    float: left;
+    position: absolute;
+}
+#caja-iconos .divContent{
+
+}
+#caja-iconos .divContent img{
+
+}
+#caja-iconos .divContent p{
+
+}
+#caja-iconos .divContent button{
+
 }
 
 #chat-window{

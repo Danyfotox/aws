@@ -42,7 +42,7 @@ socket.on('chat:typing', function(data){
 socket.on('señal',function(data){
     output2.innerHTML += `<p>${data} </p>`;
     iconos.innerHTML = `<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_8knle7ns.json"  
-    background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player>`
+    background="transparent"  speed="1"  style="width: 20%; margin-left:40%;"  loop autoplay></lottie-player>`
 });
 
 socket.on('ip',function(ip){
