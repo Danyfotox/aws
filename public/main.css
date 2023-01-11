@@ -77,6 +77,10 @@ button{
     box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
 }
 
+.divCampo50{
+    float:left;
+    width: 50%;
+}
 #alarma{
     padding: 14px 0;
     margin: 0 20px;
