@@ -19,6 +19,7 @@ btn.addEventListener('click', function(){
 
 btn2.addEventListener('click', function(){
     iconos.innerHTML = '';
+    output2.innerHTML ="";
 })
 
 message.addEventListener('keypress', function(){
