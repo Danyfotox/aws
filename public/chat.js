@@ -1,8 +1,5 @@
 const socket = io()
 
-// string
-const data_to_pass_in = 'Send this to python script';
-
 // DOM elements
 let message = document.getElementById('message');
 let username = document.getElementById('username');
