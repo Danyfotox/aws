@@ -42,14 +42,14 @@ body{
     float: left;
 }
 #caja-iconos .divContent{
-    background-color: #8ee1de;
+    background-color: #22292F;
     border-radius: 1em;
     width: 40%;
     margin-left: 30%;
     margin-top: 5em;
     position: relative;
     text-align: center;
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 1.3em;
 }
@@ -62,7 +62,7 @@ body{
 
 }
 #caja-iconos .divContent button{
-    background: #37708c;
+    background: #e3342f;
     color: #fff;
     font-size: 18px;
     border: 0;
