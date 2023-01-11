@@ -50,9 +50,7 @@ io.on('connection', (socket)=> {
         io.sockets.emit('señal','Se registra una fuga de gas, estás en peligro!');
     });
 
-    socket.on('alarma',(data)=>{
-        io.sockets.emit('alarma',data);
-    });
+   
     socket.on('señal',(alarm)=>{
         io.sockets.emit('señal',alarm);
     });
