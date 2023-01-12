@@ -8,16 +8,19 @@ body{
     background-color: #115484;
     text-align: center;
     padding: 0.4em;
-    font-size: 1em;
+    background: radial-gradient(#115484, black);
+    font-size: 1.5em;
 }
 #subtitle{
     max-width: 700px;
-    margin: 30px auto;
-    border: 1px solid #ddd;
-    box-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+    box-shadow: 1px 3px 5px rgb(0 0 0 / 50%);
     background-color: #115484;
-    color: #fff;;
+    color: #fff;
     text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 4em;
+    font-size: 1.3em;
 }
 #chat-container{
     max-width: 600px;
